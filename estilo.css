@@ -1,0 +1,141 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    padding: 10px 20px;
+    height: 60px;
+    top: 10px;
+    width: 100%;
+    max-width: 600px;
+    background-size: auto;
+    background: rgb(0, 0, 0);
+    border-radius: 60px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.icons {
+    display: flex;
+    list-style: none;
+}
+
+.icons img {
+
+    width: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-right: 30px;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(36, 36, 36, 0.1);
+    text-align: center;
+    gap: 15px;
+}
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.preco {
+    font-size: larger;
+    font-weight: bold;
+    color: green;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 0.9em;
+    color: #b60202;
+}
+.rating {
+    font-size: 0.8rem;
+    margin: 8px 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.estrela { color: #f1c40f; font-weight: bold; }
+
+.info {
+    flex-grow: 1;     
+    display: flex;
+    flex-direction: column;
+}
+
+.urgente {
+    border: 2px solid red;
+    background: #fff3f3;
+}
+.btn-comprar {
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s;
+    margin-top: auto;
+}
+
+.btn-comprar:hover {
+    background: #333;
+}
